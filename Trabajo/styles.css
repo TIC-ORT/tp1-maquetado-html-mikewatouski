@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente general */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+/* Todas las filas usan .fila para organizarlas en secciones horizontales */
+.fila {
+  width: 100%;
+  overflow: auto;     /* para encerrar flotantes */
+  margin-bottom: 10px;
+}
+
+/* --- Fila Superior --- */
+
+/* Barra lateral teal a la izquierda */
+.teal-sidebar {
+  float: left;
+  width: 20%;
+  background-color: #bfe0e1;
+  min-height: 200px;
+  padding: 20px;
+}
+
+/* Banner/Carousel a la derecha */
+.banner {
+  float: left;
+  width: 80%;
+  background-color: #eee;
+  min-height: 200px;
+  padding: 20px;
+}
+
+/* --- Fila Media --- */
+
+/* Imagen grande mitad izquierda */
+.fila-media .imagen-grande {
+  float: left;
+  width: 50%;
+  background-color: #fff;
+  
+  min-height: 280px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+/* Noticias mitad derecha */
+.fila-media .noticias {
+  float: left;
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  min-height: 280px;
+  padding: 20px;
+}
+
+/* --- Fila Inferior --- */
+
+/* Cuadro pequeño a la izquierda */
+.fila-inferior .box-izquierdo {
+  float: left;
+  width: 20%;
+  background-color: #bfe0e1;
+  min-height: 200px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+/* Caja grande a la derecha para 3 recuadros */
+.fila-inferior .box-derecho {
+  float: left;
+  width: 75%;
+  background-color: #eee;
+  min-height: 200px;
+  min-width: 150px;
+  padding: 20px;
+}
+
+/* Recuadros individuales dentro de la caja derecha */
+.fila-inferior .box-derecho .item {
+  display: inline-block;       /* Para que aparezcan en fila */
+  width: 30%;                  /* Ajusta según prefieras */
+  margin-right: 3%;            /* Espacio entre recuadros */
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.fila-inferior .box-derecho .item:last-child {
+  margin-right: 0; /* Quita el margen al último para alinear */
+}
