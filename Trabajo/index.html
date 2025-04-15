@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Layout Final</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 <body>
 
@@ -20,19 +21,23 @@
         <li>Opción 5</li>
         <li>Opción 6</li>
         <li>Opción 7</li>
-       
+      
       </ul>
     </aside>
 
     <div class="banner">
-      <h2> ffbehrucbervbelwhjkfberhbfebjhlerbwviebviyevbiyewb   
-            bchkewbfhbwefjhwebfhjwebfhjewbfhewbfhwebfhwbfhwb  
-            ffbehrucbervbelwhjkfberhbfebjhlerbwviebviyevbiyewb   
-            bchkewbfhbwefjhwebfhjwebfhjewbfhewbfhwebfhwbfhwb 
-            ffbehrucbervbelwhjkfberhbfebjhlerbwviebviyevbiyewb   
-
-      </h2>
-      <div class="carousel">
+      <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveCarousel(-1)">&#9664;</button>
+        <div class="carousel">
+          <div class="carousel-item"><img src="/inspo/Tralalero Tralala.jpeg" alt="Tralalero Tralala"></div>
+          <div class="carousel-item"><img src="/inspo/Thun Thun Thun Sahur.jpeg" alt=""></div>
+          <div class="carousel-item"><img src="/inspo/Lirili Larila.jpeg" alt="Tralalero Tralala"></div>
+          <div class="carousel-item"><img src="/inspo/Cocodrilo Bombardiro Imagen.jpeg" alt="Tralalero Tralala"></div>
+          <div class="carousel-item"><img src="/inspo/Bombini Gusini Chica.jpeg" alt="Tralalero Tralala"></div>
+          <div class="carousel-item"><img src="/inspo/Vaca Saturno (1).jpeg" alt="Tralalero Tralala"></div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveCarousel(1)">&#9654;</button>
+      </div>
     </div>
   </section>
 
@@ -51,15 +56,26 @@
 
   <!-- Fila 3: Cuadro chico (izq) + 3 recuadros (der) -->
   <section class="fila fila-inferior">
-    <div class="box-izquierdo">
-      <h3>Cuadro Izquierdo</h3>
+    <article class="box-izquierdo">
+      <header>
+        <h3>Cuadro Izquierdo</h3>
+      </header>
       <p>Contenido adicional</p>
-    </div>
-    <div class="box-derecho">
-      <div class="item">Objeto 1</div>
-      <div class="item">Objeto 2</div>
-      <div class="item">Objeto 3</div>
-    </div>
+    </article>
+    <section class="box-derecho">
+      <div class="item">
+        <h4>Objeto 1</h4>
+        <p>Descripción del objeto 1</p>
+      </div>
+      <div class="item">
+        <h4>Objeto 2</h4>
+        <p>Descripción del objeto 2</p>
+      </div>
+      <div class="item">
+        <h4>Objeto 3</h4>
+        <p>Descripción del objeto 3</p>
+      </div>
+    </section>
   </section>
 
   <!-- Pie de página (barra única abajo) -->

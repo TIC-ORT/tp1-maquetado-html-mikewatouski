@@ -39,6 +39,57 @@ body {
   background-color: #eee;
   min-height: 200px;
   padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 80%; /* Ajusta el ancho del carrusel */
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* Depende del número de elementos */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Cada elemento ocupa el 100% del contenedor visible */
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.carousel-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: #0056b3;
 }
 
 /* --- Fila Media --- */
